@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/gamer_nrg.glb" type="PackedScene" id=1]
+[ext_resource path="res://Prefabs/GamerNrg.gd" type="Script" id=2]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.249792
+height = 1.0
+
+[node name="GamerNrg" type="RigidBody"]
+script = ExtResource( 2 )
+
+[node name="gamer_nrg" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )

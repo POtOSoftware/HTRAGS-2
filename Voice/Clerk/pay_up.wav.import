@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pay_up.wav-9084945c69a6f2d2078d1c01b1acbd06.sample"
+
+[deps]
+
+source_file="res://Voice/Clerk/pay_up.wav"
+dest_files=[ "res://.import/pay_up.wav-9084945c69a6f2d2078d1c01b1acbd06.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

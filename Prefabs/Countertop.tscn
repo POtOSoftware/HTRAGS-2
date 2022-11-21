@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Textures/brick.png" type="Texture" id=1]
+[ext_resource path="res://Textures/marble.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 0.25, 0.25, 0.25 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.64415, 1.5, 7 )
+
+[node name="Countertop" type="StaticBody"]
+
+[node name="Base" type="CSGBox" parent="."]
+width = 3.0
+height = 3.0
+depth = 14.0
+material = SubResource( 2 )
+
+[node name="Top" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.131, 1.531, 0 )
+width = 3.26141
+height = 0.1
+depth = 14.0
+material = SubResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.120718, 0.08, 0 )
+shape = SubResource( 1 )

@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UITheme.tres" type="Theme" id=1]
+[ext_resource path="res://Main Menu/LevelSelect.gd" type="Script" id=2]
+
+[node name="LevelSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Tutorial" type="Button" parent="."]
+margin_left = 64.0
+margin_top = 40.0
+margin_right = 136.0
+margin_bottom = 62.0
+text = "Tutorial"
+
+[node name="House" type="Button" parent="."]
+margin_left = 144.0
+margin_top = 40.0
+margin_right = 209.0
+margin_bottom = 62.0
+rect_pivot_offset = Vector2( -280, -56 )
+text = "House"
+
+[node name="House2" type="Button" parent="."]
+margin_left = 216.0
+margin_top = 40.0
+margin_right = 281.0
+margin_bottom = 62.0
+rect_pivot_offset = Vector2( -280, -56 )
+text = "House 2"
+
+[node name="GodlyGames" type="Button" parent="."]
+margin_left = 304.0
+margin_top = 40.0
+margin_right = 410.0
+margin_bottom = 62.0
+text = "GodlyGames"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 170.0
+margin_bottom = 22.0
+text = "welcome to the dev zone"
+
+[connection signal="pressed" from="Tutorial" to="." method="_on_Tutorial_pressed"]
+[connection signal="pressed" from="House" to="." method="_on_House_pressed"]
+[connection signal="pressed" from="House2" to="." method="_on_House2_pressed"]
+[connection signal="pressed" from="GodlyGames" to="." method="_on_GodlyGames_pressed"]

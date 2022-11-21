@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tutorial_Sprinting.mp3-978fa532f1dc917c294046d0d0ae6f39.mp3str"
+
+[deps]
+
+source_file="res://Voice/Tutorial/tutorial_Sprinting.mp3"
+dest_files=[ "res://.import/tutorial_Sprinting.mp3-978fa532f1dc917c294046d0d0ae6f39.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/couch.png" type="Texture" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 0.25, 0.25, 0.25 )
+uv1_triplanar = true
+
+[node name="Couch" type="StaticBody"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+use_collision = true
+width = 8.0
+height = 1.5
+depth = 3.0
+material = SubResource( 1 )
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.375, 0.625, 0 )
+use_collision = true
+width = 0.75
+height = 2.75
+depth = 3.0
+material = SubResource( 1 )
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.375, 0.625, 0 )
+use_collision = true
+width = 0.75
+height = 2.75
+depth = 3.0
+material = SubResource( 1 )
+
+[node name="CSGBox4" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, -1.75 )
+use_collision = true
+width = 9.5
+height = 4.0
+depth = 0.5
+material = SubResource( 1 )

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/plr_piss.wav-365aea0e23a50688ea1297b25981da5a.sample"
+
+[deps]
+
+source_file="res://Voice/Player/plr_piss.wav"
+dest_files=[ "res://.import/plr_piss.wav-365aea0e23a50688ea1297b25981da5a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

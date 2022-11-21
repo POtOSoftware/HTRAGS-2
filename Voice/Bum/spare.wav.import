@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spare.wav-1e0ed2dfce071d1da8743cec99af8d43.sample"
+
+[deps]
+
+source_file="res://Voice/Bum/spare.wav"
+dest_files=[ "res://.import/spare.wav-1e0ed2dfce071d1da8743cec99af8d43.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Textures/news_report.png" type="Texture" id=1]
+[ext_resource path="res://Prefabs/TV.gd" type="Script" id=2]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( -1, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.27451, 0.27451, 0.27451, 1 )
+uv1_scale = Vector3( -1, 1, 1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1.85, 1, 0.25 )
+
+[node name="TV" type="StaticBody"]
+script = ExtResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="."]
+visible = false
+width = 4.0
+height = 0.1
+depth = 0.74
+material = SubResource( 3 )
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0 )
+visible = false
+width = 0.4
+height = 0.5
+depth = 0.4
+material = SubResource( 3 )
+
+[node name="Panel" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55, 0 )
+width = 3.7
+depth = 0.365
+material = SubResource( 3 )
+
+[node name="ScreenHole" type="CSGBox" parent="Panel"]
+transform = Transform( 0.925529, 0, 0, 0, 0.925529, 0, 0, 0, 1.01466, 0, 0, 0 )
+operation = 2
+width = 3.7
+depth = 0.5
+material = SubResource( 4 )
+
+[node name="Screen" type="CSGBox" parent="Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, 0 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 1 )
+
+[node name="Screen2" type="CSGBox" parent="Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, 0 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55013, 0 )
+shape = SubResource( 2 )

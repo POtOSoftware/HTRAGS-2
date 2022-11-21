@@ -1,0 +1,2239 @@
+[gd_scene load_steps=203 format=2]
+
+[ext_resource path="res://Textures/Grass.png" type="Texture" id=1]
+[ext_resource path="res://Textures/road.png" type="Texture" id=2]
+[ext_resource path="res://Textures/sidewalk.png" type="Texture" id=3]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Textures/driveway.png" type="Texture" id=5]
+[ext_resource path="res://Textures/roof_tiles.png" type="Texture" id=6]
+[ext_resource path="res://Textures/wood_floor.png" type="Texture" id=7]
+[ext_resource path="res://Textures/brick.png" type="Texture" id=8]
+[ext_resource path="res://Textures/bathroom_tiles.png" type="Texture" id=9]
+[ext_resource path="res://Prefabs/Toilet.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Prefabs/Bed.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Prefabs/Couch.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Prefabs/TV.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Textures/kitchen_tiles.png" type="Texture" id=14]
+[ext_resource path="res://Prefabs/Bath.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Prefabs/Countertop.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Models/Microwave.glb" type="PackedScene" id=17]
+[ext_resource path="res://Sound/microwave.wav" type="AudioStream" id=18]
+[ext_resource path="res://Levels/House/Microwave.gd" type="Script" id=19]
+[ext_resource path="res://Models/PeterCube.glb" type="PackedScene" id=20]
+[ext_resource path="res://Models/PeterCube.gd" type="Script" id=21]
+[ext_resource path="res://Levels/House/House.gd" type="Script" id=22]
+[ext_resource path="res://Prefabs/Nightstand.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Models/alarm clock.glb" type="PackedScene" id=24]
+[ext_resource path="res://Levels/House/AlarmClock.gd" type="Script" id=25]
+[ext_resource path="res://Sound/alarmclock.wav" type="AudioStream" id=26]
+[ext_resource path="res://Sound/funny_smash.wav" type="AudioStream" id=27]
+[ext_resource path="res://Models/PCTower.glb" type="PackedScene" id=28]
+[ext_resource path="res://Prefabs/Desk.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Models/Keyboard.glb" type="PackedScene" id=30]
+[ext_resource path="res://Textures/linus.png" type="Texture" id=31]
+[ext_resource path="res://Levels/House/PC.gd" type="Script" id=32]
+[ext_resource path="res://Textures/mouse.png" type="Texture" id=33]
+[ext_resource path="res://Prefabs/Door.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Textures/gamer_poster.png" type="Texture" id=35]
+[ext_resource path="res://Textures/ninja_my_beloved.png" type="Texture" id=36]
+[ext_resource path="res://Prefabs/GamerNrg.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Textures/door.png" type="Texture" id=38]
+[ext_resource path="res://Models/car_tire.glb" type="PackedScene" id=39]
+[ext_resource path="res://Spritesheets/fire.png" type="Texture" id=40]
+[ext_resource path="res://Levels/House/Car.gd" type="Script" id=41]
+[ext_resource path="res://Models/ford_focus.glb" type="PackedScene" id=42]
+[ext_resource path="res://Textures/fragged_bumper-sticker.png" type="Texture" id=43]
+[ext_resource path="res://Textures/gamer_girl_bumper-sticker.png" type="Texture" id=44]
+[ext_resource path="res://Sound/car/start_and_idle.wav" type="AudioStream" id=45]
+[ext_resource path="res://Sound/car/driving.wav" type="AudioStream" id=46]
+[ext_resource path="res://Sound/car/crash.wav" type="AudioStream" id=47]
+[ext_resource path="res://Sound/fire_burning.wav" type="AudioStream" id=48]
+[ext_resource path="res://Textures/gamer_poster2.png" type="Texture" id=49]
+[ext_resource path="res://Textures/kiss_mark.png" type="Texture" id=50]
+[ext_resource path="res://Textures/bathroom_poster.png" type="Texture" id=51]
+[ext_resource path="res://Textures/windowsxp_gangster.png" type="Texture" id=52]
+[ext_resource path="res://Sound/pc/startup.wav" type="AudioStream" id=53]
+[ext_resource path="res://Levels/House/DeskPad.gd" type="Script" id=54]
+[ext_resource path="res://Sound/car/radio.wav" type="AudioStream" id=55]
+[ext_resource path="res://Textures/house_phone.png" type="Texture" id=56]
+[ext_resource path="res://Levels/House/Phone.gd" type="Script" id=57]
+[ext_resource path="res://Sound/phone/dial.wav" type="AudioStream" id=58]
+[ext_resource path="res://Prefabs/Toilet.gd" type="Script" id=59]
+[ext_resource path="res://Sound/toilet/flush.wav" type="AudioStream" id=60]
+[ext_resource path="res://Voice/Clerk/phone_1.wav" type="AudioStream" id=61]
+[ext_resource path="res://Voice/Player/plr_yes.wav" type="AudioStream" id=62]
+[ext_resource path="res://Voice/Clerk/phone_2.wav" type="AudioStream" id=63]
+[ext_resource path="res://Voice/Peter/holyfuck.wav" type="AudioStream" id=64]
+[ext_resource path="res://Levels/GodlyGames/HitByCar.gd" type="Script" id=65]
+[ext_resource path="res://Models/ford_mustang.glb" type="PackedScene" id=66]
+[ext_resource path="res://Voice/Player/plr_heartbeat.wav" type="AudioStream" id=67]
+[ext_resource path="res://Sound/explosion.wav" type="AudioStream" id=68]
+[ext_resource path="res://Spritesheets/explosion.png" type="Texture" id=69]
+[ext_resource path="res://Textures/wall.png" type="Texture" id=70]
+[ext_resource path="res://Textures/frontdoor.png" type="Texture" id=71]
+[ext_resource path="res://Textures/NPC/police.png" type="Texture" id=72]
+[ext_resource path="res://Voice/Police/piss_off.wav" type="AudioStream" id=73]
+[ext_resource path="res://Levels/House/HTRAGS1_House.gd" type="Script" id=74]
+[ext_resource path="res://Levels/GodlyGames/FlatEarthTrigger.gd" type="Script" id=75]
+[ext_resource path="res://Textures/Wallet.png" type="Texture" id=76]
+[ext_resource path="res://Levels/House/Wallet.gd" type="Script" id=77]
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 0.1, 0.1, 0.1 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=16]
+flags_transparent = true
+albedo_color = Color( 0.611765, 0.611765, 0.611765, 0.196078 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_texture = ExtResource( 7 )
+uv1_scale = Vector3( 0.075, 0.075, 0.075 )
+uv1_triplanar = true
+
+[sub_resource type="PrismMesh" id=9]
+size = Vector3( 28, 8, 50 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_texture = ExtResource( 6 )
+uv1_scale = Vector3( 0.1, 0.1, 0.1 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_texture = ExtResource( 14 )
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=27]
+flags_unshaded = true
+albedo_texture = ExtResource( 38 )
+uv1_scale = Vector3( 0.25, 0.17, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="Animation" id=25]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "open"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 90, 0 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_texture = ExtResource( 9 )
+uv1_scale = Vector3( 0.093, 0.093, 0.091 )
+uv1_triplanar = true
+
+[sub_resource type="Animation" id=93]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=94]
+resource_name = "open"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 90, 0 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 0.075, 0.075, 0.075 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=92]
+extents = Vector3( 2.15, 2, 5.334 )
+
+[sub_resource type="Animation" id=89]
+resource_name = "Drive"
+length = 8.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -10, -0.25, 0, 0.25, 0, -10, -0.25, 0, 0.25, 0, -15.3579, -0.25, 0, 0.25, 0, -15.3579, -0.25, 0, 0.25, 0, -33.4707, -0.25, 0, 0.25, 0, -412.933, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.8, 7 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.8, 7 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -18, -0.25, 0, 0.25, 0, -18, -0.25, 0, 0.25, 0, -10.8122, -0.25, 0, 0.25, 0, -10.8122, -0.25, 0, 0.25, 0, 1.03725, -0.25, 0, 0.25, 0, 1.03724, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.8, 7 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath(".:rotation_degrees:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.5 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath(".:rotation_degrees:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( -75, -0.25, 0, 0.25, 0, -75, -0.25, 0, 0.25, 0, -56.807, -0.25, 0, 0.25, 0, -56.807, -0.25, 0, 0.25, 0, -90, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.1, 4, 4.8 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath(".:rotation_degrees:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.5 )
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("SFX/IdleSFX:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("SFX/DriveSFX:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 4.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("SFX/RadioSFX:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=91]
+resource_name = "DriveCrash"
+length = 15.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -10, -0.25, 0, 0.25, 0, -10, -0.25, 0, 0.25, 0, -15.3579, -0.25, 0, 0.25, 0, -15.3579, -0.25, 0, 0.25, 0, -33.4707, -0.25, 0, 0.25, 0, -412.933, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.8, 7 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0, 2.7572, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.8, 7 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -18, -0.25, 0, 0.25, 0, -18, -0.25, 0, 0.25, 0, -10.8122, -0.25, 0, 0.25, 0, -10.8122, -0.25, 0, 0.25, 0, 1.03725, -0.25, 0, 0.25, 0, 1.03724, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.8, 7 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath(".:rotation_degrees:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.5 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath(".:rotation_degrees:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( -75, -0.25, 0, 0.25, 0, -75, -0.25, 0, 0.25, 0, -56.807, -0.25, 0, 0.25, 0, -56.807, -0.25, 0, 0.25, 0, -90, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.1, 4, 4.8 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath(".:rotation_degrees:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 3.5, 4, 4.5 )
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../car_tire:translation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 10, 10.1, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -110, -4, 0 ), Vector3( -251.515, -4, 0 ), Vector3( -251.515, 2, 0 ), Vector3( -9.53278, 2, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("../car_tire:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = false
+tracks/7/keys = {
+"times": PoolRealArray( 0, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("SFX/IdleSFX:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("SFX/DriveSFX:playing")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 4.8, 9.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("SFX/CrashSFX:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("../car_tire/FlamesSFX:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 10.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("SFX/RadioSFX:playing")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 1.7, 9.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+
+[sub_resource type="Animation" id=90]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -10, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 2.7572, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -18, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath(".:rotation_degrees:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath(".:rotation_degrees:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( -75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath(".:rotation_degrees:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../car_tire:translation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -110, -4, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("../car_tire:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("SFX/IdleSFX:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("SFX/DriveSFX:playing")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("SFX/CrashSFX:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("../car_tire/FlamesSFX:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("SFX/RadioSFX:playing")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 0, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 64, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 128, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=41]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 192, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=42]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 256, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=43]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 320, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=44]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 384, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=45]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 448, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=46]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 512, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=47]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 576, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=48]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 0, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=49]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 64, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=50]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 128, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=51]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 192, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=52]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 256, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=53]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 320, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=54]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 384, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=55]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 448, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=56]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 512, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=57]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 576, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=58]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 0, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=59]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 64, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=60]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 128, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=61]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 192, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=62]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 256, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=63]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 320, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=64]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 384, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=65]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 448, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=66]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 512, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=67]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 576, 192, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=68]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 0, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=69]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 64, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=70]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 128, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=71]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 192, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=72]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 256, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=73]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 320, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=74]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 384, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=75]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 448, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=76]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 512, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=77]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 576, 256, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=78]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 0, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=79]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 64, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=80]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 128, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=81]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 192, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=82]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 256, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=83]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 320, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=84]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 384, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=85]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 448, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=86]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 512, 320, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=87]
+flags = 3
+atlas = ExtResource( 40 )
+region = Rect2( 576, 320, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=88]
+animations = [ {
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ), SubResource( 81 ), SubResource( 82 ), SubResource( 83 ), SubResource( 84 ), SubResource( 85 ), SubResource( 86 ), SubResource( 87 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="BoxShape" id=22]
+extents = Vector3( 0.403224, 0.191295, 0.273669 )
+
+[sub_resource type="BoxShape" id=23]
+extents = Vector3( 0.437298, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_texture = ExtResource( 31 )
+uv1_scale = Vector3( 1, 1, -1.252 )
+uv1_triplanar = true
+
+[sub_resource type="Animation" id=95]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:uv1_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=96]
+resource_name = "Scroll"
+length = 2.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:uv1_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 1, 0, 1 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 52 )
+uv1_scale = Vector3( -1, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=97]
+albedo_color = Color( 0.27451, 0.27451, 0.27451, 1 )
+uv1_scale = Vector3( -1, 1, 1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 1.85, 1, 0.25 )
+
+[sub_resource type="BoxShape" id=142]
+extents = Vector3( 0.234291, 0.218266, 0.240265 )
+
+[sub_resource type="BoxShape" id=102]
+extents = Vector3( 0.492143, 0.91284, 0.0396647 )
+
+[sub_resource type="Animation" id=104]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("SFX/DialSFX:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SFX/PhoneDialogue1:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("SFX/PhoneDialogue2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("SFX/PhoneDialogue3:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=103]
+resource_name = "phonecall"
+length = 15.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("SFX/DialSFX:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 7.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SFX/PhoneDialogue1:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 7.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("SFX/PhoneDialogue2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 9.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("SFX/PhoneDialogue3:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 10.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 1.5701, 0.754151, 0.532529 )
+
+[sub_resource type="AtlasTexture" id=111]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 0, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=112]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 100, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=113]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 200, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=114]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 300, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=115]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 400, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=116]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 0, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=117]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 100, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=118]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 200, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=119]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 300, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=120]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 400, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=121]
+flags = 3
+atlas = ExtResource( 69 )
+region = Rect2( 0, 200, 100, 100 )
+
+[sub_resource type="SpriteFrames" id=136]
+animations = [ {
+"frames": [ SubResource( 111 ), SubResource( 112 ), SubResource( 113 ), SubResource( 114 ), SubResource( 115 ), SubResource( 116 ), SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ) ],
+"loop": false,
+"name": "Explosion",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=17]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "spin"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 360, 360, 360 ) ]
+}
+
+[sub_resource type="BoxShape" id=106]
+extents = Vector3( 0.25, 0.25, 0.25 )
+
+[sub_resource type="SpatialMaterial" id=98]
+albedo_color = Color( 0.647059, 0.647059, 0.647059, 1 )
+albedo_texture = ExtResource( 3 )
+uv1_scale = Vector3( 0.069, 0.04, 0.069 )
+uv1_offset = Vector3( 0, -0.005, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=99]
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 0.029, 1, 0.04 )
+uv1_offset = Vector3( 0.5, 0, 0 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=100]
+albedo_color = Color( 0, 0.411765, 0, 1 )
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 0.05, 1, 0.05 )
+uv1_triplanar = true
+
+[sub_resource type="Animation" id=20]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rotation_degrees:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 90, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:rotation_degrees:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 90, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:rotation_degrees:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath(".:translation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 21, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath(".:translation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 3, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath(".:translation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( -55, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "wake_up"
+length = 5.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rotation_degrees:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 90, -0.25, 0, 0.25, 0, -4.78527e-21, -0.25, 0, 0.25, 0, -4.78527e-21, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1.5, 3, 3.5, 5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:rotation_degrees:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 90, -0.25, 0, 0.25, 0, 90, -0.25, 0, 0.25, 0, 90, -0.25, 0, 0.25, 0, 180, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1.5, 3, 3.5, 5 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:rotation_degrees:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, -2.50448e-06, -0.25, 0, 0.25, 0, -2.50448e-06, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1.5, 3, 3.5, 5 )
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "wake_up2"
+length = 3.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:translation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 21, -0.25, 0, 0.25, 0, 20.5, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1, 3 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:translation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 3, -0.25, 0, 0.25, 0, 3.256, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1, 3 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:translation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -55, -0.25, 0, 0.25, 0, -51, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 1, 3 )
+}
+
+[sub_resource type="Environment" id=101]
+background_mode = 1
+background_color = Color( 0, 0.862745, 1, 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=105]
+resource_name = "HeartAttack"
+
+[sub_resource type="BoxShape" id=107]
+extents = Vector3( 750, 4, 11 )
+
+[sub_resource type="BoxShape" id=108]
+extents = Vector3( 2, 2, 9 )
+
+[sub_resource type="Animation" id=109]
+resource_name = "HitPlayer"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FordMustang:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -350, -8, 0 ), Vector3( -350, 0.53, 0 ), Vector3( 755, 0.53, 0 ) ]
+}
+
+[sub_resource type="Animation" id=110]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("FordMustang:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -350, -8, -7 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=137]
+albedo_texture = ExtResource( 70 )
+uv1_scale = Vector3( 0.2, 0.2, 0.2 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=138]
+albedo_texture = ExtResource( 71 )
+
+[sub_resource type="BoxShape" id=139]
+extents = Vector3( 17, 5, 3 )
+
+[sub_resource type="BoxShape" id=140]
+extents = Vector3( 17, 9, 6 )
+
+[sub_resource type="BoxShape" id=141]
+extents = Vector3( 10000, 1, 10000 )
+
+[node name="House" type="Spatial"]
+script = ExtResource( 22 )
+
+[node name="Architecture" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -30 )
+
+[node name="House" type="CSGCombiner" parent="Architecture"]
+use_collision = true
+
+[node name="FrontWall" type="CSGBox" parent="Architecture/House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.725, 0 )
+width = 50.0
+height = 10.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="FrontDoorHole" type="CSGBox" parent="Architecture/House/FrontWall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0 )
+operation = 2
+width = 4.0
+height = 6.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="KitchenWindow" type="CSGBox" parent="Architecture/House/FrontWall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0 )
+operation = 2
+width = 12.0
+height = 6.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="Window" type="CSGBox" parent="Architecture/House/FrontWall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0 )
+width = 12.0
+height = 6.0
+depth = 0.15
+material = SubResource( 16 )
+
+[node name="SideWall" type="CSGBox" parent="Architecture/House"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -25, 5.725, -14 )
+width = 28.0
+height = 10.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="SideWall2" type="CSGBox" parent="Architecture/House"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 25, 5.725, -14 )
+width = 28.0
+height = 10.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="BackWall" type="CSGBox" parent="Architecture/House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.725, -28 )
+width = 50.0
+height = 10.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="Floor" type="CSGBox" parent="Architecture/House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.771996, -14 )
+width = 50.0
+height = 0.002
+depth = 28.0
+material = SubResource( 11 )
+
+[node name="BathroomTile" type="CSGBox" parent="Architecture/House/Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, 0, 8.5 )
+operation = 2
+width = 21.0
+depth = 11.0
+
+[node name="KitchenTile" type="CSGBox" parent="Architecture/House/Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 0, 7 )
+operation = 2
+width = 21.0
+depth = 14.0
+
+[node name="Ceiling" type="CSGBox" parent="Architecture/House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.4784, -14 )
+width = 50.0
+height = 1.0
+depth = 28.0
+material = SubResource( 8 )
+
+[node name="Roof" type="CSGMesh" parent="Architecture/House"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 15, -14 )
+mesh = SubResource( 9 )
+material = SubResource( 12 )
+
+[node name="KitchenFloor" type="CSGBox" parent="Architecture/House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 0.772, -7 )
+width = 21.0
+height = 0.002
+depth = 14.0
+material = SubResource( 14 )
+
+[node name="FrontDoor" parent="Architecture/House" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3.8, 1.90735e-06 )
+open = false
+
+[node name="CSGBox" parent="Architecture/House/FrontDoor" index="0"]
+material = SubResource( 27 )
+
+[node name="AnimationPlayer" parent="Architecture/House/FrontDoor" index="2"]
+anims/RESET = SubResource( 25 )
+anims/open = SubResource( 26 )
+
+[node name="Bedroom" type="CSGCombiner" parent="Architecture"]
+use_collision = true
+
+[node name="Bathroom" type="Spatial" parent="Architecture/Bedroom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -6 )
+
+[node name="BathroomWall" type="CSGBox" parent="Architecture/Bedroom/Bathroom"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.5, 5.725, -5 )
+use_collision = true
+width = 21.0
+height = 10.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="BathroomDoorHole" type="CSGBox" parent="Architecture/Bedroom/Bathroom/BathroomWall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, -2, 0 )
+operation = 2
+width = 4.0
+height = 6.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="BathroomFloor" type="CSGBox" parent="Architecture/Bedroom/Bathroom/BathroomWall"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 9.53674e-07, -4.953, -5.5 )
+width = 21.0
+height = 0.002
+depth = 11.0
+material = SubResource( 13 )
+
+[node name="OmniLight" type="OmniLight" parent="Architecture/Bedroom/Bathroom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 6, 0 )
+shadow_enabled = true
+omni_range = 9.28992
+
+[node name="Door" parent="Architecture/Bedroom/Bathroom" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 3.8, -5 )
+open = false
+
+[node name="CSGBox" parent="Architecture/Bedroom/Bathroom/Door" index="0"]
+material = SubResource( 27 )
+
+[node name="AnimationPlayer" parent="Architecture/Bedroom/Bathroom/Door" index="2"]
+anims/RESET = SubResource( 93 )
+anims/open = SubResource( 94 )
+
+[node name="Poster" type="Sprite3D" parent="Architecture/Bedroom/Bathroom/Door"]
+transform = Transform( 1.927, 0, 0, 0, 1.927, 0, 0, 0, 1.927, 1.78564, 0, -0.0740128 )
+flip_h = true
+texture = ExtResource( 51 )
+
+[node name="Wall" type="CSGBox" parent="Architecture/Bedroom"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 5.725, -14 )
+width = 28.0
+height = 10.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="BedroomDoorHole" type="CSGBox" parent="Architecture/Bedroom/Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -2, 0 )
+operation = 2
+width = 4.0
+height = 6.0
+depth = 0.15
+material = SubResource( 8 )
+
+[node name="OmniLight" type="OmniLight" parent="Architecture/Bedroom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 6, -20 )
+light_energy = 0.75
+shadow_enabled = true
+omni_range = 13.7713
+
+[node name="Door" parent="Architecture/Bedroom" instance=ExtResource( 34 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 3.8, -19 )
+
+[node name="CSGBox" parent="Architecture/Bedroom/Door" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4.76837e-07 )
+
+[node name="Poster" type="Sprite3D" parent="Architecture/Bedroom/Door"]
+transform = Transform( -2.02313, 0, -3.05484e-07, 0, 2.02313, 0, 3.05484e-07, 0, -2.02313, 1.84899, 0.0130692, -0.0732121 )
+texture = ExtResource( 35 )
+
+[node name="Driveway" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.268829, -33 )
+use_collision = true
+width = 50.0
+depth = 50.0
+material = SubResource( 5 )
+
+[node name="Car" type="StaticBody" parent="."]
+transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, -10, 2.7572, -18 )
+script = ExtResource( 41 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ford_focus" parent="Car" instance=ExtResource( 42 )]
+transform = Transform( -1.19209e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.19209e-07, 0, 1.0217, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4585, 0, 0.495594 )
+shape = SubResource( 92 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Car"]
+anims/Drive = SubResource( 89 )
+anims/DriveCrash = SubResource( 91 )
+anims/RESET = SubResource( 90 )
+
+[node name="BumperSticker" type="Sprite3D" parent="Car"]
+transform = Transform( 0.997284, 0, -0.0736559, 0, 1, 0, 0.0736559, 0, 0.997284, 0.756, -0.533, -4.856 )
+flip_h = true
+texture = ExtResource( 43 )
+
+[node name="BumperSticker2" type="Sprite3D" parent="Car"]
+transform = Transform( 0.5, 0, 0, 0, 0.370449, -0.335809, 0, 0.335809, 0.370449, 0.64348, 1.14785, -4.08742 )
+flip_h = true
+texture = ExtResource( 44 )
+
+[node name="SFX" type="Spatial" parent="Car"]
+
+[node name="IdleSFX" type="AudioStreamPlayer3D" parent="Car/SFX"]
+stream = ExtResource( 45 )
+unit_db = 15.0
+bus = "SFX"
+
+[node name="DriveSFX" type="AudioStreamPlayer3D" parent="Car/SFX"]
+stream = ExtResource( 46 )
+unit_db = 25.0
+bus = "SFX"
+
+[node name="CrashSFX" type="AudioStreamPlayer3D" parent="Car/SFX"]
+stream = ExtResource( 47 )
+unit_db = 40.0
+bus = "SFX"
+
+[node name="RadioSFX" type="AudioStreamPlayer3D" parent="Car/SFX"]
+stream = ExtResource( 55 )
+unit_db = 20.0
+bus = "SFX"
+
+[node name="car_tire" parent="." instance=ExtResource( 39 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -110, -4, 0 )
+
+[node name="Fire" type="AnimatedSprite3D" parent="car_tire"]
+transform = Transform( -6, 0, -9.05975e-07, 0, 6, 0, 9.05975e-07, 0, -6, 0, 1.57835, 0 )
+billboard = 2
+frames = SubResource( 88 )
+frame = 39
+playing = true
+
+[node name="FlamesSFX" type="AudioStreamPlayer3D" parent="car_tire"]
+stream = ExtResource( 48 )
+unit_db = 18.0
+bus = "SFX"
+
+[node name="Furniture" type="Spatial" parent="."]
+
+[node name="Bedroom" type="Spatial" parent="Furniture"]
+
+[node name="Bed" parent="Furniture/Bedroom" instance=ExtResource( 11 )]
+transform = Transform( -1.09278e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.09278e-07, 20, 2.3, -55 )
+
+[node name="Nightstand" parent="Furniture/Bedroom" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4023, 2.76589, -50.7564 )
+
+[node name="AlarmClock" type="RigidBody" parent="Furniture/Bedroom/Nightstand"]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -0.191135, 0, -0.298435 )
+sleeping = true
+script = ExtResource( 25 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="alarm clock" parent="Furniture/Bedroom/Nightstand/AlarmClock" instance=ExtResource( 24 )]
+transform = Transform( -1.73205, 0, -1, 0, 2, 0, 1, 0, -1.73205, -0.0112934, 0.33, 0.0179214 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Bedroom/Nightstand/AlarmClock"]
+transform = Transform( -0.866026, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866026, -0.0491753, 0.333615, -0.0494194 )
+shape = SubResource( 22 )
+
+[node name="AlarmSFX" type="AudioStreamPlayer3D" parent="Furniture/Bedroom/Nightstand/AlarmClock"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.277573, 0 )
+stream = ExtResource( 26 )
+autoplay = true
+bus = "SFX"
+
+[node name="SmashSFX" type="AudioStreamPlayer3D" parent="Furniture/Bedroom/Nightstand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.207842, 0.230913, -0.3298 )
+stream = ExtResource( 27 )
+bus = "SFX"
+
+[node name="PC" type="StaticBody" parent="Furniture/Bedroom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -43 )
+script = ExtResource( 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PCTower" parent="Furniture/Bedroom/PC" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.253567, 1.77902, -0.275578 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Bedroom/PC"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.253, 1.788, -0.269 )
+shape = SubResource( 23 )
+
+[node name="Speaker" type="AudioStreamPlayer3D" parent="Furniture/Bedroom/PC"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.21188, 4, 0 )
+stream = ExtResource( 53 )
+bus = "SFX"
+
+[node name="Desk" parent="Furniture/Bedroom" instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.09166, 2.76668, -43 )
+
+[node name="Keyboard" parent="Furniture/Bedroom/Desk" instance=ExtResource( 30 )]
+transform = Transform( -0.0146991, 0, -0.749856, 0, 0.75, 0, 0.749856, 0, -0.0146991, 0.5, 0.426, -0.599998 )
+
+[node name="DeskPad" type="CSGBox" parent="Furniture/Bedroom/Desk"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0408545, 0.368362, -0.523914 )
+width = 5.26444
+height = 0.0250185
+depth = 1.59597
+material = SubResource( 24 )
+script = ExtResource( 54 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Furniture/Bedroom/Desk/DeskPad"]
+anims/RESET = SubResource( 95 )
+anims/Scroll = SubResource( 96 )
+
+[node name="Monitor" type="StaticBody" parent="Furniture/Bedroom/Desk"]
+transform = Transform( -0.733976, 0, -0.154205, 0, 0.75, 0, 0.154205, 0, -0.733976, 1.79013, 0.410072, 1.03759 )
+
+[node name="CSGBox" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor"]
+height = 0.1
+depth = 0.74
+material = SubResource( 3 )
+
+[node name="CSGBox2" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0 )
+width = 0.4
+height = 0.5
+depth = 0.4
+material = SubResource( 3 )
+
+[node name="Panel" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55, 0 )
+width = 3.7
+depth = 0.365
+material = SubResource( 3 )
+
+[node name="ScreenHole" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor/Panel"]
+transform = Transform( 0.925529, 0, 0, 0, 0.925529, 0, 0, 0, 1.01466, 0, 0, 0 )
+operation = 2
+width = 3.7
+depth = 0.5
+material = SubResource( 4 )
+
+[node name="Screen" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor/Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, 0 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 1 )
+
+[node name="Screen2" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor/Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, 0 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 97 )
+
+[node name="Screen3" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor/Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, -0.0312398 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Bedroom/Desk/Monitor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55013, 0 )
+shape = SubResource( 2 )
+
+[node name="Monitor2" type="StaticBody" parent="Furniture/Bedroom/Desk"]
+transform = Transform( -0.736742, 0, 0.140394, 0, 0.75, 0, -0.140394, 0, -0.736742, -1.42152, 0.410072, 1.044 )
+
+[node name="CSGBox" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2"]
+height = 0.1
+depth = 0.74
+material = SubResource( 3 )
+
+[node name="CSGBox2" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0 )
+width = 0.4
+height = 0.5
+depth = 0.4
+material = SubResource( 3 )
+
+[node name="Panel" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55, 0 )
+width = 3.7
+depth = 0.365
+material = SubResource( 3 )
+
+[node name="ScreenHole" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2/Panel"]
+transform = Transform( 0.925529, 0, 0, 0, 0.925529, 0, 0, 0, 1.01466, 0, 0, 0 )
+operation = 2
+width = 3.7
+depth = 0.5
+material = SubResource( 4 )
+
+[node name="Screen" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2/Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, 0 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 1 )
+
+[node name="Screen2" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2/Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, 0 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 97 )
+
+[node name="Screen3" type="CSGBox" parent="Furniture/Bedroom/Desk/Monitor2/Panel"]
+transform = Transform( 1.74653, 0, 0, 0, 1, 0, 0, 0, 0.618347, 0, 0, -0.0312398 )
+height = 1.92
+depth = 0.468504
+material = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Bedroom/Desk/Monitor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55013, 0 )
+shape = SubResource( 2 )
+
+[node name="Mouse" type="Sprite3D" parent="Furniture/Bedroom/Desk"]
+transform = Transform( 0.459698, 0.0974686, -4.26049e-09, 0, -2.05407e-08, -0.469917, -0.0974686, 0.459698, -2.0094e-08, -1.76194, 0.383379, -0.642899 )
+texture = ExtResource( 33 )
+
+[node name="Wallet" type="StaticBody" parent="Furniture/Bedroom/Desk"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4086, 0.695365, -0.323742 )
+script = ExtResource( 77 )
+
+[node name="Sprite3D" type="Sprite3D" parent="Furniture/Bedroom/Desk/Wallet"]
+billboard = 1
+texture = ExtResource( 76 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Bedroom/Desk/Wallet"]
+shape = SubResource( 142 )
+
+[node name="NinjaPoster" type="Sprite3D" parent="Furniture/Bedroom"]
+transform = Transform( 3.36717e-15, 1.76228, -7.70319e-08, 7.70319e-08, -7.70319e-08, -1.76228, -1.76228, 0, -7.70319e-08, 22.2581, 9.97731, -54.958 )
+texture = ExtResource( 36 )
+
+[node name="KissMark" type="Sprite3D" parent="Furniture/Bedroom/NinjaPoster"]
+transform = Transform( 0.271861, -0.262542, -3.90799e-14, 0.262542, 0.271861, 3.73035e-14, 1.77636e-15, -5.41789e-14, 0.377937, -0.384075, 0.458038, 0.0488348 )
+texture = ExtResource( 50 )
+
+[node name="KissMark2" type="Sprite3D" parent="Furniture/Bedroom/NinjaPoster"]
+transform = Transform( 0.365765, 0.0951451, -3.90799e-14, -0.0951451, 0.365765, 3.90799e-14, 4.61853e-14, -2.84217e-14, 0.377937, -0.145355, 0.240048, 0.0374894 )
+texture = ExtResource( 50 )
+
+[node name="GamerMoviePoster" type="Sprite3D" parent="Furniture/Bedroom"]
+transform = Transform( 1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, 19.6262, 5.98981, -57.9036 )
+texture = ExtResource( 49 )
+
+[node name="Bathroom" type="Spatial" parent="Furniture"]
+
+[node name="Toilet" parent="Furniture/Bathroom" instance=ExtResource( 10 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.96602, 0.787266, -37.9942 )
+script = ExtResource( 59 )
+
+[node name="FlushSFX" type="AudioStreamPlayer3D" parent="Furniture/Bathroom/Toilet"]
+transform = Transform( 0.666667, 0, 0, 0, 0.666667, 0, 0, 0, 0.666667, 0.454389, 0.53287, -0.482428 )
+stream = ExtResource( 60 )
+bus = "SFX"
+
+[node name="Bath" parent="Furniture/Bathroom" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3116, 1.82877, -32.16 )
+
+[node name="LivingRoom" type="Spatial" parent="Furniture"]
+
+[node name="Couch" parent="Furniture/LivingRoom" instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -13, 1.525, -47 )
+
+[node name="TV" parent="Furniture/LivingRoom" instance=ExtResource( 13 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -13, 3, -57.5655 )
+
+[node name="Phone" type="StaticBody" parent="Furniture/LivingRoom"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.92196, 5, -36 )
+script = ExtResource( 57 )
+
+[node name="Sprite3D" type="Sprite3D" parent="Furniture/LivingRoom/Phone"]
+pixel_size = 0.015
+texture = ExtResource( 56 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/LivingRoom/Phone"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0117264, -0.0181875, 0 )
+shape = SubResource( 102 )
+
+[node name="SFX" type="Spatial" parent="Furniture/LivingRoom/Phone"]
+
+[node name="DialSFX" type="AudioStreamPlayer" parent="Furniture/LivingRoom/Phone/SFX"]
+stream = ExtResource( 58 )
+volume_db = -18.0
+bus = "SFX"
+
+[node name="PhoneDialogue1" type="AudioStreamPlayer" parent="Furniture/LivingRoom/Phone/SFX"]
+stream = ExtResource( 61 )
+volume_db = -2.0
+bus = "SFX"
+
+[node name="PhoneDialogue2" type="AudioStreamPlayer" parent="Furniture/LivingRoom/Phone/SFX"]
+stream = ExtResource( 62 )
+volume_db = -2.0
+bus = "SFX"
+
+[node name="PhoneDialogue3" type="AudioStreamPlayer" parent="Furniture/LivingRoom/Phone/SFX"]
+stream = ExtResource( 63 )
+volume_db = -2.0
+bus = "SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Furniture/LivingRoom/Phone"]
+anims/RESET = SubResource( 104 )
+anims/phonecall = SubResource( 103 )
+
+[node name="Kitchen" type="Spatial" parent="Furniture"]
+
+[node name="Countertop" parent="Furniture/Kitchen" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.42, 2, -37 )
+
+[node name="Microwave" type="StaticBody" parent="Furniture/Kitchen/Countertop"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5 )
+script = ExtResource( 19 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Kitchen/Countertop/Microwave"]
+transform = Transform( -0.569107, 0, 0.822263, 0, 1, 0, -0.822263, 0, -0.569107, 0.0821991, 0.35, 0.193193 )
+shape = SubResource( 15 )
+
+[node name="MicrowaveSFX" type="AudioStreamPlayer3D" parent="Furniture/Kitchen/Countertop/Microwave"]
+transform = Transform( -0.569107, 0, 0.822263, 0, 1, 0, -0.822263, 0, -0.569107, 0.0821991, 0.35, 0.193193 )
+stream = ExtResource( 18 )
+bus = "SFX"
+
+[node name="Microwave" parent="Furniture/Kitchen/Countertop/Microwave" instance=ExtResource( 17 )]
+transform = Transform( -0.569107, 0, 0.822263, 0, 1, 0, -0.822263, 0, -0.569107, 0.0821991, 0.35, 0.193193 )
+
+[node name="Explosion" type="AnimatedSprite3D" parent="Furniture/Kitchen/Countertop/Microwave"]
+transform = Transform( 16.6068, 0, -28.7638, 0, 33.2136, 0, 28.7638, 0, 16.6068, 0.26383, 1.18916, 0.264196 )
+visible = false
+billboard = 1
+frames = SubResource( 136 )
+animation = "Explosion"
+
+[node name="ExplosionSFX" type="AudioStreamPlayer3D" parent="Furniture/Kitchen/Countertop/Microwave"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.447661, 0 )
+stream = ExtResource( 68 )
+unit_db = 80.0
+bus = "SFX"
+
+[node name="PeterCube" type="StaticBody" parent="Furniture/Kitchen/Countertop"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.79, 2.25, 6.07 )
+script = ExtResource( 21 )
+
+[node name="PeterCube" parent="Furniture/Kitchen/Countertop/PeterCube" instance=ExtResource( 20 )]
+transform = Transform( 0.251102, 0, 0, 0, 0.251102, 0, 0, 0, 0.251102, 0.000440598, 0, -3.05176e-05 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Furniture/Kitchen/Countertop/PeterCube/PeterCube"]
+anims/RESET = SubResource( 17 )
+anims/spin = SubResource( 18 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Kitchen/Countertop/PeterCube"]
+shape = SubResource( 106 )
+
+[node name="FunniSFX" type="AudioStreamPlayer3D" parent="Furniture/Kitchen/Countertop/PeterCube"]
+stream = ExtResource( 64 )
+bus = "SFX"
+
+[node name="GamerNrgStack" type="Spatial" parent="Furniture/Kitchen/Countertop"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, -2 )
+
+[node name="Base" type="Spatial" parent="Furniture/Kitchen/Countertop/GamerNrgStack"]
+
+[node name="GamerNrg" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Base" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 1 )
+
+[node name="GamerNrg2" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Base" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 0.400002 )
+
+[node name="GamerNrg3" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Base" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.200001 )
+
+[node name="GamerNrg4" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Base" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.799999 )
+
+[node name="GamerNrg5" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Base" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -1.4 )
+
+[node name="GamerNrg6" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Base" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -2 )
+
+[node name="Stack" type="Spatial" parent="Furniture/Kitchen/Countertop/GamerNrgStack"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="GamerNrg7" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 0.68 )
+
+[node name="GamerNrg8" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 0.08 )
+
+[node name="GamerNrg9" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.5 )
+
+[node name="GamerNrg10" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -1.1 )
+
+[node name="GamerNrg11" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -1.7 )
+
+[node name="Stack2" type="Spatial" parent="Furniture/Kitchen/Countertop/GamerNrgStack"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="GamerNrg7" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack2" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 0.380997 )
+
+[node name="GamerNrg8" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack2" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.219002 )
+
+[node name="GamerNrg9" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack2" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.799004 )
+
+[node name="GamerNrg10" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack2" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -1.399 )
+
+[node name="Stack3" type="Spatial" parent="Furniture/Kitchen/Countertop/GamerNrgStack"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -0.292576 )
+
+[node name="GamerNrg7" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack3" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 0.380997 )
+
+[node name="GamerNrg8" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack3" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.219002 )
+
+[node name="GamerNrg9" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack3" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.799004 )
+
+[node name="Stack4" type="Spatial" parent="Furniture/Kitchen/Countertop/GamerNrgStack"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -0.602257 )
+
+[node name="GamerNrg7" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack4" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, 0.380997 )
+
+[node name="GamerNrg8" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack4" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.333, -0.219002 )
+
+[node name="Stack5" type="Spatial" parent="Furniture/Kitchen/Countertop/GamerNrgStack"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -0.602257 )
+
+[node name="GamerNrg7" parent="Furniture/Kitchen/Countertop/GamerNrgStack/Stack5" instance=ExtResource( 37 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.333, 0.106461 )
+
+[node name="Road" type="Spatial" parent="."]
+
+[node name="Sidewalk" type="CSGBox" parent="Road"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578774, -5.5 )
+use_collision = true
+width = 1500.0
+height = 0.25
+depth = 5.0
+material = SubResource( 98 )
+
+[node name="Sidewalk2" type="CSGBox" parent="Road"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578774, 25.5 )
+use_collision = true
+width = 1500.0
+height = 0.25
+depth = 5.0
+material = SubResource( 98 )
+
+[node name="Road" type="CSGBox" parent="Road"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.41, 10 )
+width = 25.9997
+height = 0.25
+depth = 1500.0
+material = SubResource( 99 )
+
+[node name="Grass" type="CSGBox" parent="."]
+use_collision = true
+width = 1500.0
+height = 1.0
+depth = 1500.0
+material = SubResource( 100 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 21, 3, -55 )
+speed = 7
+can_move = false
+can_look = false
+can_sprint = false
+can_jump = false
+cutscene = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+anims/RESET = SubResource( 20 )
+anims/wake_up = SubResource( 19 )
+anims/wake_up2 = SubResource( 21 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 101 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 18, 0 )
+light_energy = 0.5
+shadow_enabled = true
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="TrueTimer" type="Timer" parent="Timers"]
+wait_time = 15.0
+one_shot = true
+
+[node name="HeartAttackTimer" type="Timer" parent="Timers"]
+wait_time = 5.0
+one_shot = true
+
+[node name="CutsceneCamera" type="Camera" parent="."]
+transform = Transform( -0.726431, -0.33046, 0.602573, 0, 0.876802, 0.480851, -0.68724, 0.349305, -0.636936, 3.47684, 14.6333, -25.9141 )
+far = 500.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/HeartAttack = SubResource( 105 )
+
+[node name="HitByCar" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
+script = ExtResource( 65 )
+
+[node name="Tween" type="Tween" parent="HitByCar"]
+
+[node name="CollisionShape" type="CollisionShape" parent="HitByCar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0 )
+shape = SubResource( 107 )
+
+[node name="FordMustang" type="Area" parent="HitByCar"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -350, -8, -7 )
+
+[node name="ford_mustang" parent="HitByCar/FordMustang" instance=ExtResource( 66 )]
+transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="HitByCar/FordMustang"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.15256e-07, 2, 3 )
+shape = SubResource( 108 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HitByCar"]
+anims/HitPlayer = SubResource( 109 )
+anims/RESET = SubResource( 110 )
+
+[node name="HeartBeatSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 67 )
+bus = "SFX"
+
+[node name="HTRAGS1_House" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 98, -2.1861, 64 )
+script = ExtResource( 74 )
+
+[node name="House" type="CSGBox" parent="HTRAGS1_House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.6314, 1.37103 )
+use_collision = true
+width = 32.0
+height = 10.0
+depth = 32.0
+material = SubResource( 137 )
+
+[node name="Door" type="CSGBox" parent="HTRAGS1_House"]
+transform = Transform( -4.37114e-08, 0, -2.5, 0, 4, 0, 1, 0, -1.09278e-07, 12, 6.65323, -14.3866 )
+use_collision = true
+width = 0.5
+material = SubResource( 138 )
+
+[node name="Coppers" type="Spatial" parent="HTRAGS1_House"]
+
+[node name="Police" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, -16, 5.51568, -20 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police2" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, -12, 5.51568, -23 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police3" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, -7, 5.51568, -25 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police4" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, -2, 5.51568, -26 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police5" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, 3, 5.51568, -26 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police6" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, 9, 5.51568, -25 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police7" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, 14, 5.51568, -23 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="Police8" type="Sprite3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 1, 17, 5.51568, -20 )
+billboard = 2
+texture = ExtResource( 72 )
+
+[node name="PissOff" type="AudioStreamPlayer3D" parent="HTRAGS1_House/Coppers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -26 )
+stream = ExtResource( 73 )
+unit_db = 24.0
+bus = "SFX"
+
+[node name="WarningTrigger" type="Area" parent="HTRAGS1_House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -34 )
+
+[node name="CollisionShape" type="CollisionShape" parent="HTRAGS1_House/WarningTrigger"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 2 )
+shape = SubResource( 139 )
+
+[node name="ArrestTrigger" type="Area" parent="HTRAGS1_House"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -23 )
+
+[node name="CollisionShape" type="CollisionShape" parent="HTRAGS1_House/ArrestTrigger"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 6, 2.81695 )
+shape = SubResource( 140 )
+
+[node name="FlatEarthTrigger" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, 0 )
+script = ExtResource( 75 )
+
+[node name="CollisionShape" type="CollisionShape" parent="FlatEarthTrigger"]
+shape = SubResource( 141 )
+
+[connection signal="animation_finished" from="Car/AnimationPlayer" to="Car" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="Furniture/Kitchen/Countertop/Microwave/Explosion" to="Furniture/Kitchen/Countertop/Microwave" method="_on_Explosion_animation_finished"]
+[connection signal="animation_finished" from="Player/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="timeout" from="Timers/TrueTimer" to="." method="_on_TrueTimer_timeout"]
+[connection signal="timeout" from="Timers/HeartAttackTimer" to="." method="_on_HeartAttackTimer_timeout"]
+[connection signal="body_entered" from="HitByCar" to="HitByCar" method="_on_HitByCar_body_entered"]
+[connection signal="body_entered" from="HitByCar/FordMustang" to="HitByCar" method="_on_FordMustang_body_entered"]
+[connection signal="body_entered" from="HTRAGS1_House/WarningTrigger" to="HTRAGS1_House" method="_on_WarningTrigger_body_entered"]
+[connection signal="body_entered" from="HTRAGS1_House/ArrestTrigger" to="HTRAGS1_House" method="_on_ArrestTrigger_body_entered"]
+[connection signal="body_entered" from="FlatEarthTrigger" to="FlatEarthTrigger" method="_on_FlatEarthTrigger_body_entered"]
+
+[editable path="Architecture/House/FrontDoor"]
+[editable path="Architecture/Bedroom/Bathroom/Door"]
+[editable path="Architecture/Bedroom/Door"]
+[editable path="Player"]

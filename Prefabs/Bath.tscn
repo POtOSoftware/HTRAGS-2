@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+metallic = 0.15
+roughness = 0.0
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 6, 0.075, 1.65499 )
+
+[node name="Bath" type="StaticBody"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0323267, -0.742974, -0.00439954 )
+use_collision = true
+width = 11.75
+height = 0.5
+depth = 3.5
+material = SubResource( 1 )
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.8 )
+use_collision = true
+width = 11.6
+depth = 0.4
+material = SubResource( 1 )
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.8 )
+use_collision = true
+width = 11.6
+depth = 0.4
+material = SubResource( 1 )
+
+[node name="CSGBox4" type="CSGBox" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 0 )
+use_collision = true
+width = 4.0
+depth = 0.4
+material = SubResource( 1 )
+
+[node name="CSGBox5" type="CSGBox" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6, 0, 0 )
+use_collision = true
+width = 4.0
+depth = 0.4
+material = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.564513, 0 )
+shape = SubResource( 2 )

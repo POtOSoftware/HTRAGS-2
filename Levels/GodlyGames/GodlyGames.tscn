@@ -1,0 +1,1244 @@
+[gd_scene load_steps=96 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/road.png" type="Texture" id=2]
+[ext_resource path="res://Textures/sidewalk.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Grass.png" type="Texture" id=4]
+[ext_resource path="res://Textures/parking_lot.png" type="Texture" id=5]
+[ext_resource path="res://Prefabs/Tree.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Models/GodlyGamesSign.glb" type="PackedScene" id=7]
+[ext_resource path="res://Textures/htrags2poster.png" type="Texture" id=8]
+[ext_resource path="res://Textures/soytendo_banner.png" type="Texture" id=9]
+[ext_resource path="res://Prefabs/GameShelf.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Models/GameBoxes/ps_AmongMe.glb" type="PackedScene" id=11]
+[ext_resource path="res://Textures/hall_of_fame_banner.png" type="Texture" id=12]
+[ext_resource path="res://Levels/GodlyGames/Speakers.gd" type="Script" id=13]
+[ext_resource path="res://Levels/GodlyGames/Radio.gd" type="Script" id=14]
+[ext_resource path="res://Models/GameBoxes/pc_HTRAGS2.glb" type="PackedScene" id=15]
+[ext_resource path="res://Textures/newandhot.png" type="Texture" id=16]
+[ext_resource path="res://Models/GameBoxes/pc_Morbius.gltf" type="PackedScene" id=17]
+[ext_resource path="res://Textures/hall_of_fame.png" type="Texture" id=18]
+[ext_resource path="res://Models/GameBoxes/xb_Karlson.glb" type="PackedScene" id=19]
+[ext_resource path="res://Models/GameBoxes/ps_BertGame.glb" type="PackedScene" id=20]
+[ext_resource path="res://Models/GameBoxes/pc_UltimateMan4.glb" type="PackedScene" id=21]
+[ext_resource path="res://Models/GameBoxes/pc_HalfLife3.glb" type="PackedScene" id=22]
+[ext_resource path="res://Models/GameBoxes/pc_HTRAGSRemastered.glb" type="PackedScene" id=23]
+[ext_resource path="res://Models/GameBoxes/soy_SexMan3.glb" type="PackedScene" id=24]
+[ext_resource path="res://Models/GameBoxes/soy_HDTF.glb" type="PackedScene" id=25]
+[ext_resource path="res://Models/GameBoxes/xb_HTRTUSFR.glb" type="PackedScene" id=26]
+[ext_resource path="res://Textures/xbox_banner.png" type="Texture" id=27]
+[ext_resource path="res://Textures/pc_banner.png" type="Texture" id=28]
+[ext_resource path="res://Textures/playstation_banner.png" type="Texture" id=29]
+[ext_resource path="res://Models/GameBoxes/ps_Bobux.glb" type="PackedScene" id=30]
+[ext_resource path="res://Models/GameBoxes/ps_HTRTUSA.glb" type="PackedScene" id=31]
+[ext_resource path="res://Models/GameBoxes/ps_Balls4D.glb" type="PackedScene" id=32]
+[ext_resource path="res://Models/GameBoxes/pc_Weezer.glb" type="PackedScene" id=33]
+[ext_resource path="res://Prefabs/BetterCallTerm.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Textures/NPC/bum.png" type="Texture" id=35]
+[ext_resource path="res://Voice/Bum/spare.wav" type="AudioStream" id=36]
+[ext_resource path="res://UITheme.tres" type="Theme" id=37]
+[ext_resource path="res://Voice/Bum/thankyou.wav" type="AudioStream" id=38]
+[ext_resource path="res://Voice/Bum/itsokay.wav" type="AudioStream" id=39]
+[ext_resource path="res://Levels/GodlyGames/Bum.gd" type="Script" id=40]
+[ext_resource path="res://Models/GameBoxes/ps_Minions2.glb" type="PackedScene" id=41]
+[ext_resource path="res://Models/GameBoxes/ps_TF3.glb" type="PackedScene" id=42]
+[ext_resource path="res://Models/GameBoxes/soy_DunkeyKong.glb" type="PackedScene" id=43]
+[ext_resource path="res://Models/GameBoxes/xb_ImFuckingConfused2.glb" type="PackedScene" id=44]
+[ext_resource path="res://Models/GameBoxes/xb_Gaylo.glb" type="PackedScene" id=45]
+[ext_resource path="res://Models/GameBoxes/xb_BeersOfWar.glb" type="PackedScene" id=46]
+[ext_resource path="res://Models/GameBoxes/ps_BiggieCheese.glb" type="PackedScene" id=47]
+[ext_resource path="res://Textures/NPC/clerk.png" type="Texture" id=48]
+[ext_resource path="res://Levels/GodlyGames/HTRAGS2.gd" type="Script" id=49]
+[ext_resource path="res://Levels/GodlyGames/ShopliftTrigger.gd" type="Script" id=50]
+[ext_resource path="res://Levels/GodlyGames/gg_Car.gd" type="Script" id=51]
+[ext_resource path="res://Sound/car/driving.wav" type="AudioStream" id=52]
+[ext_resource path="res://Sound/car/start_and_idle.wav" type="AudioStream" id=53]
+[ext_resource path="res://Sound/car/radio.wav" type="AudioStream" id=54]
+[ext_resource path="res://Sound/car/crash.wav" type="AudioStream" id=55]
+[ext_resource path="res://Textures/gamer_girl_bumper-sticker.png" type="Texture" id=56]
+[ext_resource path="res://Textures/fragged_bumper-sticker.png" type="Texture" id=57]
+[ext_resource path="res://Models/ford_focus.glb" type="PackedScene" id=58]
+[ext_resource path="res://Levels/GodlyGames/HitByCar.gd" type="Script" id=59]
+[ext_resource path="res://Models/ford_mustang.glb" type="PackedScene" id=60]
+[ext_resource path="res://Levels/GodlyGames/Clerk.gd" type="Script" id=61]
+[ext_resource path="res://Voice/Clerk/out_of_stock.wav" type="AudioStream" id=62]
+[ext_resource path="res://Voice/Player/plr_piss.wav" type="AudioStream" id=63]
+[ext_resource path="res://Models/GameBoxes/ps_GilfHunter.glb" type="PackedScene" id=64]
+[ext_resource path="res://Voice/Clerk/good_ending1.wav" type="AudioStream" id=65]
+[ext_resource path="res://Voice/Clerk/good_ending2.wav" type="AudioStream" id=66]
+[ext_resource path="res://Voice/Clerk/pay_up.wav" type="AudioStream" id=67]
+[ext_resource path="res://Levels/GodlyGames/FlatEarthTrigger.gd" type="Script" id=68]
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+
+[sub_resource type="SpatialMaterial" id=9]
+flags_transparent = true
+albedo_color = Color( 0.666667, 0.666667, 0.666667, 0.117647 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 0.580107, 0.758916, 0.0570294 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 0.346249, 0.555593, 0.344132 )
+
+[sub_resource type="Animation" id=24]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Dialogue/OutOfStock:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Dialogue/plr_PISS!:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "out_of_stock"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Dialogue/OutOfStock:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Dialogue/plr_PISS!:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0, 0.411765, 0, 1 )
+albedo_texture = ExtResource( 4 )
+uv1_scale = Vector3( 0.05, 1, 0.05 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 5 )
+uv1_scale = Vector3( 1.226, 2.929, 1 )
+uv1_offset = Vector3( 0.083, 0, 0 )
+
+[sub_resource type="BoxShape" id=18]
+extents = Vector3( 2.15, 2, 5.334 )
+
+[sub_resource type="Animation" id=26]
+resource_name = "Drive_Back_Home"
+length = 2.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("../../CutsceneCamera:current")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:translation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -18.2069, 2.37595, -21.7567 ), Vector3( -18.2069, 7.14389, -3.84196 ), Vector3( -18.2069, 2.41224, 16.6694 ), Vector3( 235.185, 2.41224, 16.6694 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:rotation_degrees")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -120, 0 ), Vector3( -0.051, -135, 180 ), Vector3( 0, 90, 0 ) ]
+}
+
+[sub_resource type="Animation" id=27]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../../CutsceneCamera:current")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:translation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( -18.2069, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:translation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 2.7572, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath(".:translation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( -21.7567, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath(".:rotation_degrees:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath(".:rotation_degrees:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( -113.333, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath(".:rotation_degrees:z")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath(".:translation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -18.2069, 2.7572, -21.7567 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath(".:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, -113.333, 0 ) ]
+}
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.647059, 0.647059, 0.647059, 1 )
+albedo_texture = ExtResource( 3 )
+uv1_scale = Vector3( 0.069, 0.04, 0.069 )
+uv1_offset = Vector3( 0, -0.005, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 0.029, 1, 0.04 )
+uv1_offset = Vector3( 0.5, 0, 0 )
+uv1_triplanar = true
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 25, 10, 1 )
+
+[sub_resource type="BoxShape" id=25]
+extents = Vector3( 10000, 1, 10000 )
+
+[sub_resource type="Environment" id=5]
+background_mode = 1
+background_color = Color( 0, 0.862745, 1, 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 1.25
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 1.82953, 3.0384, 1 )
+
+[sub_resource type="Animation" id=14]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Speech:stream")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ null ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Speech:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "itsokay"
+length = 16.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Speech:stream")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 39 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Speech:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "spare"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Speech:stream")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 36 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Speech:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "thankyou"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Speech:stream")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 38 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Speech:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="BoxShape" id=19]
+extents = Vector3( 750, 4, 11 )
+
+[sub_resource type="BoxShape" id=20]
+extents = Vector3( 2, 2, 9 )
+
+[sub_resource type="Animation" id=21]
+resource_name = "HitPlayer"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FordMustang:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -350, -8, 0 ), Vector3( -350, 0.53, 0 ), Vector3( 755, 0.53, 0 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("FordMustang:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -350, -8, -7 ) ]
+}
+
+[node name="GodlyGames" type="Spatial"]
+
+[node name="Scenery" type="Spatial" parent="."]
+
+[node name="Trees" type="Spatial" parent="Scenery"]
+
+[node name="Tree" parent="Scenery/Trees" instance=ExtResource( 6 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -30, 0.471722, -13 )
+
+[node name="Tree2" parent="Scenery/Trees" instance=ExtResource( 6 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 30, 0.472, -13 )
+
+[node name="Tree3" parent="Scenery/Trees" instance=ExtResource( 6 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -30, 0.471722, -33 )
+
+[node name="Tree4" parent="Scenery/Trees" instance=ExtResource( 6 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 30, 0.472, -33 )
+
+[node name="Tree5" parent="Scenery/Trees" instance=ExtResource( 6 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -30, 0.471722, -53 )
+
+[node name="Tree6" parent="Scenery/Trees" instance=ExtResource( 6 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 30, 0.472, -53 )
+
+[node name="BetterCallTerm" parent="Scenery" instance=ExtResource( 34 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 80, 0, -30 )
+
+[node name="GodlyGamesBuilding" type="Spatial" parent="."]
+
+[node name="Architecture" type="Spatial" parent="GodlyGamesBuilding"]
+
+[node name="Walls" type="Spatial" parent="GodlyGamesBuilding/Architecture"]
+
+[node name="Wall" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 6.75, -60 )
+use_collision = true
+width = 22.0
+height = 10.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="WindowHole" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls/Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+operation = 2
+width = 9.0
+height = 5.6
+depth = 1.2
+
+[node name="Window" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls/Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+width = 9.0
+height = 5.6
+depth = 0.5
+material = SubResource( 9 )
+
+[node name="Wall2" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 6.75, -60 )
+use_collision = true
+width = 22.0
+height = 10.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="WindowHole" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls/Wall2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 0, 0 )
+operation = 2
+width = 9.0
+height = 5.6
+depth = 1.2
+
+[node name="Window" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls/Wall2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 0, 0 )
+width = 9.0
+height = 5.6
+depth = 0.5
+material = SubResource( 9 )
+
+[node name="Wall3" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.75, -60 )
+use_collision = true
+width = 4.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Wall4" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -24.25, 6.75, -82.75 )
+use_collision = true
+width = 46.0
+height = 10.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Wall5" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24.25, 6.75, -82.75 )
+use_collision = true
+width = 46.0
+height = 10.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Wall6" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Walls"]
+transform = Transform( 1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0, 6.75, -106 )
+use_collision = true
+width = 49.0
+height = 10.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="CSGCombiner" type="CSGCombiner" parent="GodlyGamesBuilding/Architecture/Walls"]
+
+[node name="Roof" type="Spatial" parent="GodlyGamesBuilding/Architecture"]
+
+[node name="Ceiling" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Roof"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.25, -83 )
+use_collision = true
+width = 48.0
+height = 1.0
+depth = 46.0
+material = SubResource( 7 )
+
+[node name="Sign" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Roof"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 15.25, -61 )
+width = 48.0
+height = 1.0
+depth = 8.0
+material = SubResource( 7 )
+
+[node name="GodlyGamesSign" parent="GodlyGamesBuilding/Architecture/Roof" instance=ExtResource( 7 )]
+transform = Transform( 8.74, 0, 0, 0, -3.82038e-07, -8.74, 0, 8.74, -3.82038e-07, 0, 16, -60.3863 )
+
+[node name="Backroom" type="Spatial" parent="GodlyGamesBuilding/Architecture"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -98 )
+
+[node name="Wall" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Backroom"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 9.2, -1 )
+use_collision = true
+width = 13.89
+height = 3.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Wall2" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Backroom"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1, 6.2, 5.7 )
+use_collision = true
+width = 11.8
+height = 9.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Wall3" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Backroom"]
+transform = Transform( -4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 0, 4.7, -5.3 )
+use_collision = true
+width = 6.0
+height = 5.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Wall4" type="CSGBox" parent="GodlyGamesBuilding/Architecture/Backroom"]
+transform = Transform( -4.37114e-08, 0, -1, 1, -4.37114e-08, -4.37114e-08, -4.37114e-08, -1, 1.91069e-15, 0, 4.7, 3.45 )
+use_collision = true
+width = 6.0
+height = 5.0
+depth = 0.5
+material = SubResource( 7 )
+
+[node name="Floor" type="CSGBox" parent="GodlyGamesBuilding/Architecture"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30612, -83 )
+width = 48.0
+height = 1.0
+depth = 46.0
+material = SubResource( 7 )
+
+[node name="Foundation" type="CSGBox" parent="GodlyGamesBuilding/Architecture"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -83 )
+use_collision = true
+width = 50.0
+height = 1.5
+depth = 50.0
+material = SubResource( 6 )
+
+[node name="Ramp" type="CSGPolygon" parent="GodlyGamesBuilding/Architecture"]
+transform = Transform( -4.37114e-08, 4.37114e-08, -5, 1, -4.37114e-08, -2.18557e-07, -4.37114e-08, -1, -2.18557e-07, -25, 0.500994, -57 )
+use_collision = true
+polygon = PoolVector2Array( 0, -7.5, 0, 1, 1.25, 1 )
+depth = 10.0
+material = SubResource( 6 )
+
+[node name="OutdoorPosters" type="Spatial" parent="GodlyGamesBuilding"]
+
+[node name="HTRAGS2" type="Sprite3D" parent="GodlyGamesBuilding/OutdoorPosters"]
+transform = Transform( 3.03525, 0, 0, 0, 3.03525, 0, 0, 0, 3.03525, 8, 7, -59.7308 )
+texture = ExtResource( 8 )
+
+[node name="Lights" type="Spatial" parent="GodlyGamesBuilding"]
+
+[node name="Light" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 7, -67 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light2" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 7, -93 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light3" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 7, -99 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light4" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 7, -67 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light5" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -81 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light6" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 7, -84 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light7" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -64 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Light8" type="OmniLight" parent="GodlyGamesBuilding/Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -99 )
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 1.0
+omni_range = 15.0
+
+[node name="Counter" type="Spatial" parent="GodlyGamesBuilding"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -91 )
+
+[node name="Countertop" type="CSGBox" parent="GodlyGamesBuilding/Counter"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.75, 0 )
+use_collision = true
+width = 30.4
+height = 4.0
+material = SubResource( 8 )
+
+[node name="HTRAGS2" type="StaticBody" parent="GodlyGamesBuilding/Counter"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 5.5, 0 )
+script = ExtResource( 49 )
+
+[node name="pc_HTRAGS2" parent="GodlyGamesBuilding/Counter/HTRAGS2" instance=ExtResource( 15 )]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="GodlyGamesBuilding/Counter/HTRAGS2"]
+shape = SubResource( 15 )
+
+[node name="NewAndHot" type="Sprite3D" parent="GodlyGamesBuilding/Counter"]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1, 7, 3.7, 1.02 )
+texture = ExtResource( 16 )
+
+[node name="Clerk" type="StaticBody" parent="GodlyGamesBuilding/Counter"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 1, 0, 5.20327, -2.64313 )
+script = ExtResource( 61 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Clerk" type="Sprite3D" parent="GodlyGamesBuilding/Counter/Clerk"]
+billboard = 1
+texture = ExtResource( 48 )
+
+[node name="CollisionShape" type="CollisionShape" parent="GodlyGamesBuilding/Counter/Clerk"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0439522, 0, 0 )
+shape = SubResource( 16 )
+
+[node name="Dialogue" type="Spatial" parent="GodlyGamesBuilding/Counter/Clerk"]
+
+[node name="OutOfStock" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Counter/Clerk/Dialogue"]
+stream = ExtResource( 62 )
+unit_db = 16.0
+bus = "SFX"
+
+[node name="plr_PISS!" type="AudioStreamPlayer" parent="GodlyGamesBuilding/Counter/Clerk/Dialogue"]
+stream = ExtResource( 63 )
+volume_db = 2.0
+
+[node name="GoodEnding1" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Counter/Clerk/Dialogue"]
+stream = ExtResource( 65 )
+unit_db = 16.0
+bus = "SFX"
+
+[node name="GoodEnding2" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Counter/Clerk/Dialogue"]
+stream = ExtResource( 66 )
+unit_db = 16.0
+bus = "SFX"
+
+[node name="PayUp" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Counter/Clerk/Dialogue"]
+stream = ExtResource( 67 )
+unit_db = 16.0
+bus = "SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GodlyGamesBuilding/Counter/Clerk"]
+anims/RESET = SubResource( 24 )
+anims/out_of_stock = SubResource( 23 )
+
+[node name="Speakers" type="Spatial" parent="GodlyGamesBuilding"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -80 )
+script = ExtResource( 13 )
+music = "res://Music/gg_radio1.ogg"
+
+[node name="Radio" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.6, 0 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio2" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 8.6, 0 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio3" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.6, 0 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio4" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.6, 11 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio5" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 8.6, 11 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio6" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.6, 11 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio7" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.6, -20 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio8" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 8.6, -20 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="Radio9" type="AudioStreamPlayer3D" parent="GodlyGamesBuilding/Speakers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 8.6, -20 )
+bus = "Music"
+script = ExtResource( 14 )
+
+[node name="HallOfFameBanner" type="Sprite3D" parent="GodlyGamesBuilding"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 1, 18, 9.4, -92 )
+texture = ExtResource( 12 )
+
+[node name="HallOfFame" type="Sprite3D" parent="GodlyGamesBuilding"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 1, 18, 5.4, -92 )
+texture = ExtResource( 18 )
+
+[node name="GameShelves" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -81 )
+
+[node name="Soytendo" type="Spatial" parent="GameShelves"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 0, 8 )
+
+[node name="Games" type="Spatial" parent="GameShelves/Soytendo"]
+
+[node name="soy_SexMan3" parent="GameShelves/Soytendo/Games" instance=ExtResource( 24 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.200001, 5.9, -2.3 )
+
+[node name="soy_DunkeyKong" parent="GameShelves/Soytendo/Games" instance=ExtResource( 43 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 5.9, -1 )
+
+[node name="HDTF" type="Spatial" parent="GameShelves/Soytendo/Games"]
+
+[node name="soy_HDTF24" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, -1 )
+
+[node name="soy_HDTF25" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, -2.3 )
+
+[node name="soy_HDTF26" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 0.300003 )
+
+[node name="soy_HDTF27" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 1.60001 )
+
+[node name="soy_HDTF28" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 2.9 )
+
+[node name="soy_HDTF29" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 4.2 )
+
+[node name="soy_HDTF30" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 5.50001 )
+
+[node name="soy_HDTF31" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 6.8 )
+
+[node name="soy_HDTF32" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 8.10001 )
+
+[node name="soy_HDTF33" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 9.40001 )
+
+[node name="soy_HDTF34" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 10.7 )
+
+[node name="soy_HDTF35" parent="GameShelves/Soytendo/Games/HDTF" instance=ExtResource( 25 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199999, 3.9, 12 )
+
+[node name="SoytendoBanner" type="Sprite3D" parent="GameShelves/Soytendo"]
+transform = Transform( -1.09278e-07, 0, 1, 0, 2, 0, -2.5, 0, -4.37114e-08, -0.99, 9, 5 )
+texture = ExtResource( 9 )
+
+[node name="GameShelf" parent="GameShelves/Soytendo" instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.87631, 2, 4.75 )
+
+[node name="PlayStation" type="Spatial" parent="GameShelves"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 8 )
+
+[node name="Games" type="Spatial" parent="GameShelves/PlayStation"]
+
+[node name="ps_AmongMe" parent="GameShelves/PlayStation/Games" instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 12.2 )
+
+[node name="ps_BertGame" parent="GameShelves/PlayStation/Games" instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 10.9 )
+
+[node name="ps_Bobux" parent="GameShelves/PlayStation/Games" instance=ExtResource( 30 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.299999, 5.9, 9.6 )
+
+[node name="ps_HTRTUSA" parent="GameShelves/PlayStation/Games" instance=ExtResource( 31 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 8.3 )
+
+[node name="ps_Balls4D" parent="GameShelves/PlayStation/Games" instance=ExtResource( 32 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 7 )
+
+[node name="ps_Minions2" parent="GameShelves/PlayStation/Games" instance=ExtResource( 41 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 5.7 )
+
+[node name="ps_TF3" parent="GameShelves/PlayStation/Games" instance=ExtResource( 42 )]
+transform = Transform( -5.21541e-08, 0, 1, 0, 1, 0, -1, 0, -5.21541e-08, -0.300001, 5.9, 4.4 )
+
+[node name="ps_BiggieCheese" parent="GameShelves/PlayStation/Games" instance=ExtResource( 47 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 3.1 )
+
+[node name="ps_GilfHunter" parent="GameShelves/PlayStation/Games" instance=ExtResource( 64 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.3, 5.9, 1.75 )
+
+[node name="GameShelf" parent="GameShelves/PlayStation" instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.87631, 2, 4.75 )
+
+[node name="PlayStationBanner" type="Sprite3D" parent="GameShelves/PlayStation"]
+transform = Transform( -1.09279e-07, 0, -1, 0, 2, 0, 2.5, 0, -4.37114e-08, -0.910003, 9.3, 4.4 )
+double_sided = false
+texture = ExtResource( 29 )
+
+[node name="PlayStationBanner2" type="Sprite3D" parent="GameShelves/PlayStation"]
+transform = Transform( -1.09278e-07, 0, 1, 0, 2, 0, -2.5, 0, -4.37114e-08, -0.800726, 9.3, 4.4 )
+double_sided = false
+texture = ExtResource( 29 )
+
+[node name="Xbox" type="Spatial" parent="GameShelves"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9, 0, 17.4 )
+
+[node name="Games" type="Spatial" parent="GameShelves/Xbox"]
+
+[node name="xb_Karlson" parent="GameShelves/Xbox/Games" instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.200001, 5.9, 11.9 )
+
+[node name="xb_HTRTUSFR" parent="GameShelves/Xbox/Games" instance=ExtResource( 26 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.200001, 5.9, 10.6 )
+
+[node name="xb_ImFuckingConfused2" parent="GameShelves/Xbox/Games" instance=ExtResource( 44 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.2, 5.9, 9.3 )
+
+[node name="xb_Gaylo" parent="GameShelves/Xbox/Games" instance=ExtResource( 45 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.200003, 5.9, 8 )
+
+[node name="xb_BeersOfWar" parent="GameShelves/Xbox/Games" instance=ExtResource( 46 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.199995, 5.9, 6.7 )
+
+[node name="GameShelf" parent="GameShelves/Xbox" instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.87631, 2, 4.75 )
+
+[node name="XboxBanner" type="Sprite3D" parent="GameShelves/Xbox"]
+transform = Transform( -1.09279e-07, 0, -1, 0, 2, 0, 2.5, 0, -4.37114e-08, -0.910003, 9.3, 4.4 )
+double_sided = false
+texture = ExtResource( 27 )
+
+[node name="XboxBanner2" type="Sprite3D" parent="GameShelves/Xbox"]
+transform = Transform( -1.09278e-07, 0, 1, 0, 2, 0, -2.5, 0, -4.37114e-08, -0.800725, 9.3, 4.4 )
+double_sided = false
+texture = ExtResource( 27 )
+
+[node name="PC" type="Spatial" parent="GameShelves"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23, 0, 17.4 )
+
+[node name="Games" type="Spatial" parent="GameShelves/PC"]
+
+[node name="pc_UltimateMan4" parent="GameShelves/PC/Games" instance=ExtResource( 21 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.299988, 5.9, 12 )
+
+[node name="pc_HTRAGSRemastered" parent="GameShelves/PC/Games" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.299999, 5.9, 10.6 )
+
+[node name="pc_Morbius" parent="GameShelves/PC/Games" instance=ExtResource( 17 )]
+transform = Transform( 5.24537e-07, 0, 4, 0, 4, 0, -4, 0, 5.24537e-07, -0.3, 5.9, 9.25 )
+
+[node name="pc_HalfLife3" parent="GameShelves/PC/Games" instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.299999, 5.9, 7.90002 )
+
+[node name="pc_Weezer" parent="GameShelves/PC/Games" instance=ExtResource( 33 )]
+transform = Transform( -3.14315e-06, 0, 1, 0, 1, 0, -1, 0, -3.14315e-06, -0.300001, 5.9, 6.50001 )
+
+[node name="PCBanner" type="Sprite3D" parent="GameShelves/PC"]
+transform = Transform( -1.09278e-07, 0, 1, 0, 2, 0, -2.5, 0, -4.37114e-08, -0.900726, 9.3, 4.40001 )
+texture = ExtResource( 28 )
+
+[node name="GameShelf" parent="GameShelves/PC" instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.87631, 2, 4.75 )
+
+[node name="Grass" type="CSGBox" parent="."]
+use_collision = true
+width = 1500.0
+height = 1.0
+depth = 1500.0
+material = SubResource( 1 )
+
+[node name="ParkingLot" type="Spatial" parent="."]
+
+[node name="Asphalt" type="CSGBox" parent="ParkingLot"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -33 )
+width = 50.0
+height = 0.25
+depth = 50.0
+material = SubResource( 2 )
+
+[node name="Car" type="StaticBody" parent="ParkingLot"]
+transform = Transform( -0.396074, 0, -0.918218, 0, 1, 0, 0.918218, 0, -0.396074, -18.2069, 2.7572, -21.7567 )
+script = ExtResource( 51 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ford_focus" parent="ParkingLot/Car" instance=ExtResource( 58 )]
+transform = Transform( -1.19209e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.19209e-07, 0, 1.0217, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="ParkingLot/Car"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4585, 0, 0.495594 )
+shape = SubResource( 18 )
+
+[node name="BumperSticker" type="Sprite3D" parent="ParkingLot/Car"]
+transform = Transform( 0.997284, 0, -0.0736559, 0, 1, 0, 0.0736559, 0, 0.997284, 0.756, -0.533, -4.856 )
+flip_h = true
+texture = ExtResource( 57 )
+
+[node name="BumperSticker2" type="Sprite3D" parent="ParkingLot/Car"]
+transform = Transform( 0.5, 0, 0, 0, 0.370449, -0.335809, 0, 0.335809, 0.370449, 0.64348, 1.14785, -4.08742 )
+flip_h = true
+texture = ExtResource( 56 )
+
+[node name="SFX" type="Spatial" parent="ParkingLot/Car"]
+
+[node name="IdleSFX" type="AudioStreamPlayer3D" parent="ParkingLot/Car/SFX"]
+stream = ExtResource( 53 )
+unit_db = 15.0
+bus = "SFX"
+
+[node name="DriveSFX" type="AudioStreamPlayer3D" parent="ParkingLot/Car/SFX"]
+stream = ExtResource( 52 )
+unit_db = 25.0
+bus = "SFX"
+
+[node name="CrashSFX" type="AudioStreamPlayer3D" parent="ParkingLot/Car/SFX"]
+stream = ExtResource( 55 )
+unit_db = 40.0
+bus = "SFX"
+
+[node name="RadioSFX" type="AudioStreamPlayer3D" parent="ParkingLot/Car/SFX"]
+stream = ExtResource( 54 )
+unit_db = 20.0
+bus = "SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ParkingLot/Car"]
+anims/Drive_Back_Home = SubResource( 26 )
+anims/RESET = SubResource( 27 )
+
+[node name="Road" type="Spatial" parent="."]
+
+[node name="Sidewalk" type="CSGBox" parent="Road"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578774, -5.5 )
+use_collision = true
+width = 1500.0
+height = 0.25
+depth = 5.0
+material = SubResource( 3 )
+
+[node name="Sidewalk2" type="CSGBox" parent="Road"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578774, 25.5 )
+use_collision = true
+width = 1500.0
+height = 0.25
+depth = 5.0
+material = SubResource( 3 )
+
+[node name="Road" type="CSGBox" parent="Road"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.41, 10 )
+width = 25.9997
+height = 0.25
+depth = 1500.0
+material = SubResource( 4 )
+
+[node name="Triggers" type="Spatial" parent="."]
+
+[node name="ShopliftTrigger" type="Area" parent="Triggers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -75 )
+script = ExtResource( 50 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Triggers/ShopliftTrigger"]
+shape = SubResource( 17 )
+disabled = true
+
+[node name="FlatEarthTrigger" type="Area" parent="Triggers"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, 0 )
+script = ExtResource( 68 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Triggers/FlatEarthTrigger"]
+shape = SubResource( 25 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -19, 3.2, -16.5 )
+__meta__ = {
+"_edit_group_": true
+}
+speed = 100
+
+[node name="Camera" parent="Player/Head" index="0"]
+current = true
+
+[node name="Crosshair" parent="Player/UILayer/UI" index="0"]
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 5 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 20.2, 0 )
+shadow_enabled = true
+
+[node name="Bum" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.111899, -109.97 )
+script = ExtResource( 40 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite3D" type="Sprite3D" parent="Bum"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.02561, 1.36098 )
+pixel_size = 0.03
+billboard = 2
+texture = ExtResource( 35 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bum"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.38894, 1.40224 )
+shape = SubResource( 10 )
+
+[node name="Speech" type="AudioStreamPlayer3D" parent="Bum"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6728, 0.509499 )
+unit_db = 10.0
+bus = "SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bum"]
+anims/RESET = SubResource( 14 )
+anims/itsokay = SubResource( 11 )
+anims/spare = SubResource( 12 )
+anims/thankyou = SubResource( 13 )
+
+[node name="UI" type="Control" parent="Bum"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 37 )
+
+[node name="Yes" type="Button" parent="Bum/UI"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 192.0
+margin_top = -16.0
+margin_right = 256.0
+margin_bottom = 16.0
+text = "Yes"
+
+[node name="No" type="Button" parent="Bum/UI"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -256.0
+margin_top = -16.0
+margin_right = -192.0
+margin_bottom = 16.0
+text = "No"
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.929347, -0.0746603, 0.361579, 0, 0.979341, 0.202218, -0.369207, -0.187931, 0.910147, 8.12068, 18.6476, -15.4971 )
+visible = false
+far = 500.0
+
+[node name="HitByCar" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
+script = ExtResource( 59 )
+
+[node name="Tween" type="Tween" parent="HitByCar"]
+
+[node name="CollisionShape" type="CollisionShape" parent="HitByCar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0 )
+shape = SubResource( 19 )
+
+[node name="FordMustang" type="Area" parent="HitByCar"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -350, -8, -7 )
+
+[node name="ford_mustang" parent="HitByCar/FordMustang" instance=ExtResource( 60 )]
+transform = Transform( 4.5, 0, 0, 0, 4.5, 0, 0, 0, 4.5, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="HitByCar/FordMustang"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.15256e-07, 2, 3 )
+shape = SubResource( 20 )
+
+[node name="Driver" type="Sprite3D" parent="HitByCar/FordMustang"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HitByCar"]
+anims/HitPlayer = SubResource( 21 )
+anims/RESET = SubResource( 22 )
+
+[node name="CutsceneCamera" type="Camera" parent="."]
+transform = Transform( -0.939694, 0.107579, -0.324655, 0, 0.949242, 0.314545, 0.342015, 0.295577, -0.891998, -21.4903, 13.55, -43.74 )
+far = 500.0
+
+[connection signal="body_entered" from="Triggers/ShopliftTrigger" to="Triggers/ShopliftTrigger" method="_on_ShopliftTrigger_body_entered"]
+[connection signal="body_entered" from="Triggers/FlatEarthTrigger" to="Triggers/FlatEarthTrigger" method="_on_FlatEarthTrigger_body_entered"]
+[connection signal="animation_finished" from="Bum/AnimationPlayer" to="Bum" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="pressed" from="Bum/UI/Yes" to="Bum" method="_on_Yes_pressed"]
+[connection signal="pressed" from="Bum/UI/No" to="Bum" method="_on_No_pressed"]
+[connection signal="body_entered" from="HitByCar" to="HitByCar" method="_on_HitByCar_body_entered"]
+[connection signal="body_entered" from="HitByCar/FordMustang" to="HitByCar" method="_on_FordMustang_body_entered"]
+
+[editable path="Player"]

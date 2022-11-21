@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.670588, 0.670588, 0.670588, 1 )
+roughness = 0.25
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.85, 1, 0.87 )
+
+[node name="Toilet" type="StaticBody"]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
+
+[node name="Base" type="CSGPolygon" parent="."]
+polygon = PoolVector2Array( 0, 0, 0, 1, 1, 1, 0.7, 0 )
+material = SubResource( 2 )
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 1.5, -0.5 )
+width = 0.5
+height = 1.0
+depth = 1.75
+material = SubResource( 2 )
+
+[node name="CSGCylinder" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.0267, -0.5 )
+radius = 0.711289
+height = 0.05
+material = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 1, -0.5 )
+shape = SubResource( 1 )

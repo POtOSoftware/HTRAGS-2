@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tutorial_Crouching.mp3-dd7ee9890a7a32dc344658415a6b7ec8.mp3str"
+
+[deps]
+
+source_file="res://Voice/Tutorial/tutorial_Crouching.mp3"
+dest_files=[ "res://.import/tutorial_Crouching.mp3-dd7ee9890a7a32dc344658415a6b7ec8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

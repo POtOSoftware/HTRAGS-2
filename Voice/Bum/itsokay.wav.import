@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/itsokay.wav-43d04bdbb3103c83ebb0b146b7b667cc.sample"
+
+[deps]
+
+source_file="res://Voice/Bum/itsokay.wav"
+dest_files=[ "res://.import/itsokay.wav-43d04bdbb3103c83ebb0b146b7b667cc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

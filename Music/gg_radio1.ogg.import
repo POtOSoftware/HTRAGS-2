@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gg_radio1.ogg-162920772d17d21d2a5c88f7322a5e01.oggstr"
+
+[deps]
+
+source_file="res://Music/gg_radio1.ogg"
+dest_files=[ "res://.import/gg_radio1.ogg-162920772d17d21d2a5c88f7322a5e01.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

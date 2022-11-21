@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tutorial_Speechless.mp3-cc308fc5b0ee442950aa0fc95105fcb0.mp3str"
+
+[deps]
+
+source_file="res://Voice/Tutorial/tutorial_Speechless.mp3"
+dest_files=[ "res://.import/tutorial_Speechless.mp3-cc308fc5b0ee442950aa0fc95105fcb0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tutorial_Jumping.mp3-5bb2d8343a4a188549c53d8415165bb4.mp3str"
+
+[deps]
+
+source_file="res://Voice/Tutorial/tutorial_Jumping.mp3"
+dest_files=[ "res://.import/tutorial_Jumping.mp3-5bb2d8343a4a188549c53d8415165bb4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

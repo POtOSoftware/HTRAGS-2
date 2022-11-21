@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SpatialMaterial" id=2]
+metallic = 0.2
+roughness = 0.0
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0.352941 )
+
+[node name="Minifridge" type="StaticBody"]
+
+[node name="Door" type="Spatial" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="Door"]
+width = 0.2
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="CSGBox2" type="CSGBox" parent="Door"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 1.1, 0 )
+height = 0.2
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="CSGBox3" type="CSGBox" parent="Door"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0, 0 )
+width = 0.2
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="CSGBox4" type="CSGBox" parent="Door"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, -1.10017, 0 )
+height = 0.2
+depth = 0.2
+material = SubResource( 2 )
+
+[node name="Glass" type="CSGBox" parent="Door"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, 0 )
+width = 1.6
+depth = 0.2
+material = SubResource( 1 )
